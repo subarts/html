@@ -9,41 +9,48 @@
 
 <body>
   <header>
-    <h1>В <span>Мой блог</span></h1>
+    <a href="#"><span>В</span>Мой блог</a>
     <nav>
       <ul>
-        <li>HTML и CSS</li>
-        <li>Frontend</li>
-        <li>Backend</li>
+        <li><a href="#">HTML и CSS</a></li>
+        <li><a href="#">Frontend</a></li>
+        <li><a href="#">Backend</a></li>
       </ul>
     </nav>
-    <label for="search"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <g opacity="0.1" clip-path="url(#clip0_2_4373)">
-          <path
-            d="M6.41667 11.0833C8.994 11.0833 11.0833 8.994 11.0833 6.41667C11.0833 3.83934 8.994 1.75 6.41667 1.75C3.83934 1.75 1.75 3.83934 1.75 6.41667C1.75 8.994 3.83934 11.0833 6.41667 11.0833Z"
-            stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M12.25 12.25L9.71249 9.71246" stroke="black" stroke-width="2" stroke-linecap="round"
-            stroke-linejoin="round" />
-        </g>
-        <defs>
-          <clipPath id="clip0_2_4373">
-            <rect width="14" height="14" fill="white" />
-          </clipPath>
-        </defs>
-      </svg></label>
-    <input type="text" placeholder="Поиск" id="search">
+    <form>
+      <label for="search"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <g opacity="0.1" clip-path="url(#clip0_2_4373)">
+            <path
+              d="M6.41667 11.0833C8.994 11.0833 11.0833 8.994 11.0833 6.41667C11.0833 3.83934 8.994 1.75 6.41667 1.75C3.83934 1.75 1.75 3.83934 1.75 6.41667C1.75 8.994 3.83934 11.0833 6.41667 11.0833Z"
+              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M12.25 12.25L9.71249 9.71246" stroke="black" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </g>
+          <defs>
+            <clipPath id="clip0_2_4373">
+              <rect width="14" height="14" fill="white" />
+            </clipPath>
+          </defs>
+        </svg></label>
+      <input type="text" placeholder="Поиск" id="search">
+    </form>
   </header>
   <main>
-    <h2>FRONTEND
+    <h1>FRONTEND
       <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect width="4" height="4" rx="2" fill="black" fill-opacity="0.6" />
       </svg> <span>12 мая 2024</span>
-    </h2>
-    <h3>Теория цвета - Как цвет влияет на поведение<br /> потребителей</h3>
+    </h1>
+    <h2>Теория цвета - Как цвет влияет на поведение потребителей</h2>
     <section>
       <img src="./image/Ellipse 1.svg" alt="avatar">
-      <article>Наталья Васильева</article>
-      <article>Разработчик</article>
+      <div>
+        <p>Наталья Васильева</p>
+        <p>Разработчик</p>
+      </div>
+    </section>
+    <section>
       <img src="./image/Rectangle 181.svg" alt="computer">
       <p>
         Теория цвета — это особенности эмоционального восприятия человеком<br />
@@ -55,23 +62,19 @@
         продукту, подтолкнуть посетителей к совершению целевыхдействий,<br />
         повысить конверсию.
       </p>
-      <article>
-        <p>Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет.<br />
-          Эмоциональная и поведенческая реакция каждого человека зависит от личного опыта.<br />
-          Вместе с тем можно выделить определенные закономерности влияния цветов на<br />
-          поведение пользователей.
-        </p>
-      </article>
-      <article>
-        <p>В исследовании «Влияние цвета на маркетинг»
-          <a href="https://www.researchgate.net/publication/235320162_Impact_of_color_on_marketing">
-            (Impact of color on marketing)</a> говорится, что<br />
-          использование разных цветов может существенно влиять на настроение и поведение<br />
-          потребителей. Утверждается, что от 60 до 90% покупателей (в зависимости от категории<br />
-          продукта) дают положительную или отрицательную оценку товару, основываясь только на<br />
-          его цвете.
-        </p>
-      </article>
+      <p>Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет.<br />
+        Эмоциональная и поведенческая реакция каждого человека зависит от личного опыта.<br />
+        Вместе с тем можно выделить определенные закономерности влияния цветов на<br />
+        поведение пользователей.
+      </p>
+      <p>В исследовании «Влияние цвета на маркетинг»
+        <a href="https://www.researchgate.net/publication/235320162_Impact_of_color_on_marketing">
+          (Impact of color on marketing)</a> говорится, что<br />
+        использование разных цветов может существенно влиять на настроение и поведение<br />
+        потребителей. Утверждается, что от 60 до 90% покупателей (в зависимости от категории<br />
+        продукта) дают положительную или отрицательную оценку товару, основываясь только на<br />
+        его цвете.
+      </p>
     </section>
   </main>
   <footer>
