@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(0deg, #F39494, #F39494),
+  linear-gradient(243.43deg, #FFA5A5 32.96%, rgba(255, 255, 255, 0) 82.03%),
+  linear-gradient(243.18deg, #FDC5C5 25.45%, rgba(242, 152, 222, 0) 100%);
+}
+h1{
+  font-family: openSans;
+  font-weight: 700;
+}
+.login {
+  font-family: openSans;
+  font-weight: 400;
+  color: #666666;
+  font-size: 18px;
+}
+.login >a {
+  color: #089FE0;
+  text-decoration: 1px underline;
+}
+.nameCompany::placeholder  {
+  color: #333333;
+  font-size: 16px;
+  font-family: openSans;
+  font-weight: 600;
+}
+.nameInput>input::placeholder,
+.email::placeholder{
+  font-family: openSans;
+  font-weight: 400;
+  font-style: italic;
+  color: #999999;
+}
+.nameInput>input,.email{
+  background-color: #F5F5F5;
+  border:1px #F5F5F5;
+}
+.firstName {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.lastName{
+  border-radius: 0px 5px 5px 0px;
+}
+.email {
+  border-radius: 5px;
+}
+button {
+  display: block;
+  background-color: #089FE0;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-family: openSans;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+.form{
+background-color: #FFFEFE;
+}
+.terms {
+color: #089FE0;
+text-decoration: none;
+}
+.textAgree{
+  font-family: openSans;
+  font-weight: 400;
+  color: #666666;
+}
+@font-face {
+  font-family: openSans;
+  font-weight: 400;
+  src: url("./2-form//fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: openSans;
+  font-weight: 700;
+  src: url("./2-form//fonts/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: openSans;
+  font-weight: 600;
+  src: url("./2-form//fonts/OpenSans-SemiBold.ttf");
+}
