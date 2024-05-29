@@ -10,37 +10,24 @@
 
 <body>
   <header class="header">
-    <a href="#" class="logo"><span class="logoLetter">В</span>Мой блог</a>
     <nav>
       <ul class="navList">
+        <li class="navItem"><a href="#" class="logo"><span class="logoLetter">В</span>Мой блог</a></li>
         <li class="navItem"><a href="#">HTML и CSS</a></li>
         <li class="navItem"><a href="#">Frontend</a></li>
         <li class="navItem"><a href="#">Backend</a></li>
       </ul>
     </nav>
     <form class="searchForm">
-      <label for="search"><svg width="14" height="14" viewBox="0 0 14 14" fill="none"
-          xmlns="http://www.w3.org/2000/svg">
-          <g opacity="0.1" clip-path="url(#clip0_2_4373)">
-            <path
-              d="M6.41667 11.0833C8.994 11.0833 11.0833 8.994 11.0833 6.41667C11.0833 3.83934 8.994 1.75 6.41667 1.75C3.83934 1.75 1.75 3.83934 1.75 6.41667C1.75 8.994 3.83934 11.0833 6.41667 11.0833Z"
-              stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M12.25 12.25L9.71249 9.71246" stroke="black" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </g>
-          <defs>
-            <clipPath id="clip0_2_4373">
-              <rect width="14" height="14" fill="white" />
-            </clipPath>
-          </defs>
-        </svg></label>
+      <label for="search">
+        <img src="./image/search.svg" /> </label>
       <input type="text" placeholder="Поиск" id="search">
     </form>
   </header>
   <main>
     <h1>FRONTEND
       <svg width="4" height="4" viewBox="0 0 4 4" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="4" height="4" rx="2" fill="black" fill-opacity="0.6" />
+        <rect width="4" height="4" rx="2" fill-opacity="0.6" fill="rgba(255, 255, 255)" />
       </svg> <span>12 мая 2024</span>
     </h1>
     <h2>Теория цвета - Как цвет влияет на поведение потребителей</h2>
@@ -53,7 +40,7 @@
     </section>
     <section class="articlesList">
       <img src="./image/Rectangle 181.svg" alt="computer">
-      <p class="articlesItem">
+      <p class="articleFirst">
         Теория цвета — это особенности эмоционального восприятия человеком<br />
         тех или иных цветовых решений. Цвета и различные их комбинации<br />
         влияют на психику человека, а значит, во многом определяют его<br />
@@ -63,12 +50,12 @@
         продукту, подтолкнуть посетителей к совершению целевыхдействий,<br />
         повысить конверсию.
       </p>
-      <p>Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет.<br />
+      <p class="articleSec">Универсального ответа на вопрос, как тот или иной цвет влияет на разных людей, нет.<br />
         Эмоциональная и поведенческая реакция каждого человека зависит от личного опыта.<br />
         Вместе с тем можно выделить определенные закономерности влияния цветов на<br />
         поведение пользователей.
       </p>
-      <p>В исследовании «Влияние цвета на маркетинг»
+      <p class="articleThird">В исследовании «Влияние цвета на маркетинг»
         <a href="https://www.researchgate.net/publication/235320162_Impact_of_color_on_marketing">
           (Impact of color on marketing)</a> говорится, что<br />
         использование разных цветов может существенно влиять на настроение и поведение<br />
@@ -79,6 +66,6 @@
     </section>
   </main>
   <footer>
-    <article>Все права защищены (c) 2024</article>
+    <article class="license">Все права защищены (c) 2024</article>
   </footer>
 </body>

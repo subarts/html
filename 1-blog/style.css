@@ -5,11 +5,23 @@ body {
   font-family: robotoRegular;
   font-weight: 400;
 }
+.searchForm {
+  background: rgba(31, 41, 55, 1)
+}
+.searchForm>input{
+  background-color: rgba(31, 41, 55, 1);
+  border-width: 0px;
+}
 h1,h2{
   font-weight: 400;
 }
 h1{
   font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 69px;
+}
+h2 {
+  margin-top: 16px;
 }
 .logo {
   font-size: 18px;
@@ -23,17 +35,31 @@ h1{
 .navItem{
   list-style: none;
 }
+.header{
+  margin-top: 72px;
+}
 .header a{
   text-decoration: none;
+}
+.author{
+  margin-top: 30px;
 }
 .authorName{
 font-size: 18px;
 }
 .authorProf{
   font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
 }
-.articlesItem{
+.articleFirst{
   font-size: 20px;
+  margin-top: 69px;
+}
+.license{
+  color: rgba(255, 255, 255, 0.6);
+}
+.articlesList{
+  margin-top: 28px;
 }
 @font-face {
   font-family: "sourceSansPro";
