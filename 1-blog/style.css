@@ -1,0 +1,78 @@
+
+body {
+  color: #FFFFFF;
+  background: linear-gradient(180deg, #374151 0%, #111827 100%);
+  font-family: robotoRegular;
+  font-weight: 400;
+  margin: 0;
+}
+.searchForm {
+  background: rgba(31, 41, 55, 1)
+}
+.searchForm>input{
+  background-color: rgba(31, 41, 55, 1);
+  border-width: 0px;
+}
+h1,h2{
+  font-weight: 400;
+}
+h1{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 69px;
+}
+h2 {
+  margin-top: 16px;
+}
+.logo {
+  font-size: 18px;
+}
+.logoLetter {
+  background-color: #4B5563;
+  border-radius: 3px;
+  box-shadow: 0px 15px 30px 0px #00000026;
+  font-family: sourceSansPro;
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+}
+.navItem{
+  list-style: none;
+}
+.header{
+  margin-top: 72px;
+}
+.header a{
+  text-decoration: none;
+}
+.author{
+  margin-top: 30px;
+}
+.authorName{
+font-size: 18px;
+}
+.authorProf{
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.articleFirst{
+  font-size: 20px;
+  margin-top: 69px;
+}
+.license{
+  color: rgba(255, 255, 255, 0.6);
+}
+.articlesList{
+  margin-top: 28px;
+}
+a {
+  color: #FFFFFF;
+}
+@font-face {
+  font-family: "sourceSansPro";
+  src: url("./fonts/SourceSansPro-Bold.ttf");
+}
+@font-face {
+  font-family: "robotoRegular";
+  src: url("./fonts/Roboto-Regular.ttf");
+}
