@@ -1,17 +1,36 @@
-
+*{
+box-sizing: border-box;
+}
 body {
   color: #FFFFFF;
   background: linear-gradient(180deg, #374151 0%, #111827 100%);
   font-family: robotoRegular;
   font-weight: 400;
-  margin: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
 }
 .searchForm {
-  background: rgba(31, 41, 55, 1)
+  background: rgba(31, 41, 55, 1);
+  width: 224px;
+  height: 40px;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  justify-content: end;
+}
+input::placeholder{
+  font-size: 16px;
+  font-family: robotoRegular;
 }
 .searchForm>input{
   background-color: rgba(31, 41, 55, 1);
   border-width: 0px;
+  position: relative;
+  right: 4px;
 }
 h1,h2{
   font-weight: 400;
@@ -19,54 +38,111 @@ h1,h2{
 h1{
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
-  margin-top: 69px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 h2 {
-  margin-top: 16px;
+  margin-top: 2px;
+  font-size: 24px;
+  width: 525px;
+  line-height: 38px;
+  height: 76px;
+  text-align: center;
+
 }
 .logo {
   font-size: 18px;
 }
 .logoLetter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #4B5563;
   border-radius: 3px;
   box-shadow: 0px 15px 30px 0px #00000026;
   font-family: sourceSansPro;
   width: 35px;
   height: 35px;
-  display: inline-block;
+  position: relative;
+  margin-right: 11px;
+}
+.navList{
+  display: flex;
+  gap: 52px;
+  justify-content: flex-start;
+  position: relative;
+  right: 149px;
+  top: -7px;
 }
 .navItem{
   list-style: none;
 }
+.main{
+  margin-top: 49px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .header{
   margin-top: 72px;
+  width: 1080px;
+  display: flex;
+  justify-content: space-between;
 }
 .header a{
   text-decoration: none;
 }
 .author{
-  margin-top: 30px;
+  width: 214px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 27px;
+  top: 9px;
+  gap: 16px;
 }
 .authorName{
-font-size: 18px;
+  font-size: 16px;
+  top: 4px;
+  position: relative;
 }
 .authorProf{
   font-size: 14px;
+  position: relative;
+  top: -5px;
   color: rgba(255, 255, 255, 0.6);
 }
 .articleFirst{
   font-size: 20px;
   margin-top: 69px;
+  width: 708px;
+  line-height: 32px;
+}
+.articleSec{
+  margin-top: 9px;
+}
+.articleSec,
+.articleThird{
+  width: 708px;
+  line-height: 30px;
 }
 .license{
   color: rgba(255, 255, 255, 0.6);
 }
 .articlesList{
-  margin-top: 28px;
+  margin-top: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 a {
   color: #FFFFFF;
+}
+.footer{
+  margin-top: 71px;
+  height: 100px;
 }
 @font-face {
   font-family: "sourceSansPro";
