@@ -7,7 +7,7 @@
   --border-8:8px;
   --border-47:47px;
   --layout-width:1156px;
-
+  --layout-width-mobile:328px;
 }
 *{
   box-sizing: border-box;
@@ -32,26 +32,7 @@ html{
 }
 body{
   margin: 0;
-  font-family: inter;
-}
-h2{
-  text-align: center;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 120%;
-}
-h3{
-
-  font-weight: 800;
-  font-size: 32px;
-  line-height: 120%;
-}
-.headling__text{
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 140%;
-  opacity: 0.5;
-  margin-top: 16px;
+  font-family: 'Inter';
 }
 .section{
   margin: 0 auto;
@@ -59,6 +40,10 @@ h3{
 }
 .rate__h2{
   margin-bottom: 24px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
 }
 .rate__text{
   margin-bottom: 40px;
@@ -70,51 +55,62 @@ h3{
 }
 .rate__cards{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns:  repeat( auto-fit ,369px);
   gap: 24px;
+  justify-content: center;
 }
-.cards__item{
+.rate__card{
   box-shadow: 0px 0px 32px 0px #4E5D7C29;
   border-radius:var(--border-8);
-  padding: 0 40px ;
+  padding: 48px 40px ;
 }
-.item__padding93{
-  padding-top: 93px;
+.card__h3{
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 120%;
 }
-.item__main{
+.headling__text{
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  opacity: 0.5;
+}
+.card__headling{
+  display: grid;
+  gap: 16px;
+}
+.banner-hidden{
+  visibility: hidden;
+}
+.headling__banner span{
+  font-weight: 800;
+}
+.headling__banner{
+  background-color: var(--color-secondary);
+  padding: 4px 16px;
+  width: max-content;
+  border-radius: var(--border-8);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 140%;
+}
+.card__main{
   font-weight:500 ;
   font-size: 17px;
   line-height: 120%;
   color: var(--color-text);
   display: grid;
-  grid-template-columns: 1fr;
+  height: 126px;
+  margin: 50px 0 40px;
 }
-.item__button> a{
-  font-size: 17px;
-  line-height: 140%;
-  font-weight: 800;
-  font-family: 'Inter';
-  color: var(--color-text-sec);
-}
-.item__button{
-  background-color: var(--color-primary);
-  border: none;
-  border-radius: var(--border-47);
-  padding: 12px;
-  text-align: center;
-  width: 100%;
-}
-.item__main>ul{
+.main__item{
   display: grid;
   grid-template-columns: 65% 35%; 
-  justify-items: start;
-  text-wrap: nowrap;
+
 }
-.headling__color{
-  background-color: var(--color-secondary);
-  padding: 4px 16px;
-  width: max-content;
-  border-radius: var(--border-8);
+.card__main-margin{
+  margin-top: 27px;
+  margin-bottom: 40px;
 }
 .item__accent{
   padding: 8px 16px;
@@ -124,9 +120,82 @@ h3{
   font-weight: 700;
   font-size: 17px;
   line-height: 120%;
+  height: max-content;
+  margin-left: -18px;
 }
-.item__main{
-  margin-top: 50px;
-  margin-bottom: 40px;
-  row-gap: 32px;
+.item-align-centr{
+  align-items: center;
+  border-top: 1px solid #4E5D7C14;
+  border-bottom: 1px solid #4E5D7C14;
+}
+
+.item-aling-end{
+  align-items: end;
+}
+.card__button  a{
+  font-size: 17px;
+  line-height: 140%;
+  font-weight: 800;
+  font-family: 'Inter';
+  color: var(--color-text-sec);
+}
+.card__button{
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--border-47);
+  padding: 12px;
+  text-align: center;
+  width: 100%;
+}
+.rate__card:hover{
+  transition: 1s;
+  background-color: var(--color-primary);
+  color: var(--color-text-sec);
+  transition: 1s;
+}
+.rate__card:hover .card__main{
+  transition: 1s;
+  color: var(--color-text-sec);
+}
+.rate__card:hover .card__button{
+  transition: 1s;
+  background-color: var(--color-text-sec);
+}
+.rate__card:hover .card__button a{
+  transition: 1s;
+  color: var(--color-primary);
+}
+.main__item li {
+  text-wrap: nowrap;
+}
+
+@media (max-width:600px) {
+  .rate__h2{
+    font-size: 36px;
+  }
+  .rate__cards{
+    grid-template-columns:   328px;
+  }
+
+  .section{
+    margin: 0 auto;
+    max-width: var(--layout-width-mobile);
+  }
+  .rate__h2{
+    text-align: start;
+  }
+  .rate__text{
+    margin-bottom: 32px;
+    text-align: start;
+  }
+  .rate__card{
+    padding: 48px 24px;
+  }
+  .banner-hidden{
+    display: none;
+  }
+  .card__main{
+    margin: 32px 0 32px;
+  
+  }
 }
