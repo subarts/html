@@ -73,13 +73,7 @@
 .item-aling-end{
   align-items: end;
 }
-.card__button  a{
-  font-size: 17px;
-  line-height: 140%;
-  font-weight: 800;
-  font-family: 'Inter';
-  color: var(--color-text-sec);
-}
+
 .card__button{
   background-color: var(--color-primary);
   border: none;
@@ -87,6 +81,12 @@
   padding: 12px;
   text-align: center;
   width: 100%;
+  cursor: pointer;
+  font-size: 17px;
+  line-height: 140%;
+  font-weight: 800;
+  font-family: 'Inter';
+  color: var(--color-text-sec);
 }
 
 .main__item li {
@@ -110,6 +110,27 @@
   transition: 1s;
   color: var(--color-primary);
 }
+.rate__h2{
+  margin-bottom: 24px;
+}
+.rate__text{
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 140%;
+  color: var(--color-text);
+}
+.rate__cards{
+  display: grid;
+  grid-template-columns:  repeat( auto-fit ,minmax(328px, 369px));
+  gap: 24px;
+  justify-content: center;
+}
+
+.banner-hidden{
+  visibility: hidden;
+}
 
 @media (max-width:600px) {
   .rate__card{
@@ -118,5 +139,16 @@
   .card__main{
     margin: 32px 0 32px;
   
-  }
+  } 
+.rate__h2{
+  font-size: 36px;
+  text-align: start;
+}
+.rate__text{
+  margin-bottom: 32px;
+  text-align: start;
+}
+.banner-hidden{
+  display: none;
+} 
 }

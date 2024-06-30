@@ -1,49 +1,8 @@
-.section{
-  margin:0 auto;
-  max-width: var(--layout-rate-width);
+/* reviews */
+.reviews{
+  margin-bottom: 78px;
 }
 /* rate */
 .rate{
   margin-bottom: 80px;
-}
-.rate__h2{
-  margin-bottom: 24px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 120%;
-}
-.rate__text{
-  margin-bottom: 40px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 140%;
-  color: var(--color-text);
-}
-.rate__cards{
-  display: grid;
-  grid-template-columns:  repeat( auto-fit ,minmax(328px, 369px));
-  gap: 24px;
-  justify-content: center;
-}
-
-.banner-hidden{
-  visibility: hidden;
-}
-@media (max-width:600px) {
-.section{
-  max-width: var(--layout-width-mobile);
-}
-.rate__h2{
-  font-size: 36px;
-  text-align: start;
-}
-.rate__text{
-  margin-bottom: 32px;
-  text-align: start;
-}
-.banner-hidden{
-  display: none;
-} 
 }

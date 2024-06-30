@@ -6,8 +6,10 @@
   --color-text-sec: #FFFFFF;
   --border-8:8px;
   --border-47:47px;
-  --layout-rate-width:1156px;
+  --border-50:50%;
+  --layout-width-deskop:1156px;
   --layout-width-mobile:328px;
+
 }
 *{
   box-sizing: border-box;
@@ -33,5 +35,11 @@ html{
 body{
   margin: 0;
   font-family: 'Inter';
+}
+h2{
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 120%;
 }
 

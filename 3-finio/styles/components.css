@@ -1,0 +1,11 @@
+
+.wrapper{
+    margin:0 auto;
+    max-width: var(--layout-width-deskop);
+  }
+  @media (max-width:600px) {
+  .wrapper{
+    max-width: var(--layout-width-mobile);
+  }
+
+}
