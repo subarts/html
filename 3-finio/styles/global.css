@@ -4,7 +4,10 @@
   --color-bg: #FFFFFF;
   --color-text: #4E5D7C;
   --color-text-sec: #FFFFFF;
+  --color-border-line: #4E5D7C14;
+  --color-profit: #FFC736;
   --border-8:8px;
+  --border-16:16px;
   --border-47:47px;
   --border-50:50%;
   --layout-width-deskop:1156px;
@@ -14,7 +17,7 @@
 *{
   box-sizing: border-box;
 }
-p,h3{
+p,h2,h3{
   margin: 0;
 }
 a{

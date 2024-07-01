@@ -6,3 +6,36 @@
 .rate{
   margin-bottom: 80px;
 }
+/* maintenance */
+.maintenance{
+  margin: 0 auto;
+  padding-left: 95px;
+  max-width: 1392px;
+  display: flex;
+  gap: 4.625rem;
+  margin-bottom: 80px;
+  border-radius: var(--border-16);
+  background-color: var(--color-primary);
+  color:var(--color-text-sec);
+}
+@media (max-width:1200px) {
+  .maintenance{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+    border-radius: 0;
+  }
+
+}
+@media (max-width:600px) {
+.rate{
+  margin-bottom: 64px;
+}
+.maintenance{
+  margin-bottom: 48px;
+  border-radius: 0;
+  gap: 32px;
+  height: 813px;
+}
+
+}
